@@ -1,0 +1,21 @@
+body {
+  max-width: 1000px;
+  margin: 100px auto;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  margin-bottom: 80px;
+  font-size: 80px;
+  font-weight: 500;
+}
+.study_list h2 {
+  font-weight:500;
+}
+.study_list p {
+  color: #888;
+  font-weight:300;
+}
+.study_list img {
+  border : 1px solid #eee
+}

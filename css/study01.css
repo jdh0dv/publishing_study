@@ -1,0 +1,38 @@
+.wrap {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+    font-family: 'Poppins', sans-serif;
+}
+.gnb ul{
+  display: flex;
+}
+.gnb ul li{
+  margin: 0 20px;
+}
+.gnb ul li a{
+  font-size: 14px;
+  color: #b8b8b8;
+  font-family: 'Noto Sans KR'
+}
+.right_menu ul{
+  display: flex;
+  font-size: 14px;
+  color: #b8b8b8;
+  font-family: 'Noto Sans KR'
+}
+.right_menu ul li{
+  margin: 0 10px;
+}
+.right_menu ul li a{
+  font-size: 14px;
+  color: #b8b8b8;
+  font-family: 'Noto Sans KR'
+}
