@@ -1,7 +1,10 @@
+/* layout */
 .wrap {
   width: 1440px;
   margin: 0 auto;
 }
+
+/* header */
 
 .header {
   margin-top: 36px;
@@ -10,12 +13,14 @@
 }
 .logo {
     font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
 }
 .gnb ul{
   display: flex;
 }
 .gnb ul li{
-  margin: 0 20px;
+  margin: 10px 20px 0;
 }
 .gnb ul li a{
   font-size: 14px;
@@ -30,9 +35,52 @@
 }
 .right_menu ul li{
   margin: 0 10px;
+  vertical-align: center;
 }
 .right_menu ul li a{
   font-size: 14px;
   color: #b8b8b8;
   font-family: 'Noto Sans KR'
+}
+.right_menu .cart img, .right_menu .search img { width:20px; opacity: 0.5;}
+
+/* main */
+/* slider */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background: red;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
 }

@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/study01.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Ebota</title>
   </head>
   <body>
@@ -30,17 +33,47 @@
               <li>
                 <a href="#">로그인</a>
               </li>
-              <li>
-                <a href="#"><i class="xi-cart-o">장바구니</i> </a>
+              <li class="cart">
+                <a href="#"><img src="../img/html01/icon-cart.png" alt="장바구니"></a>
               </li>
-              <li>
-                <button type="button" name="search">검색</button>
+              <li class="search">
+                <button type="button" name="search"><img src="../img/html01/icon-search.png" alt="검색"></button>
               </li>
             </ul>
           </div>
       </header>
       <main>
+        <section class="visual">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="text_area">
+                  <h2>ARICHA</h2>
+                  <h3>아리차 드립백</h3>
+                  <p>중간 정도의 바디감에 산미와 바디감의 밸런스가 <br>좋은 아리차는, 자스민 향과 같은 꽃향기와<br>꿀 같은 달콤함이 느껴지는 특징을 가지고 있습니다. </p>
+                </div>
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- Swiper JS -->
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                  return '<span class="' + className + '">' + (index + 1) + "</span>";
+                },
+              },
+            });
+          </script>
+        </section>
       </main>
       <footer>
 
