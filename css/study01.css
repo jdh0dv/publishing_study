@@ -1,6 +1,6 @@
 /* layout */
 .wrap {
-  width: 1440px;
+  width: 1400px;
   margin: 0 auto;
 }
 
@@ -34,8 +34,11 @@
   font-family: 'Noto Sans KR'
 }
 .right_menu ul li{
-  margin: 0 10px;
+  margin: 0 20px;
   vertical-align: center;
+}
+.right_menu ul li:last-child{
+  margin-right: 0;
 }
 .right_menu ul li a{
   font-size: 14px;
@@ -52,8 +55,6 @@
 }
 
 .swiper-slide {
-  background: red;
-
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,7 +80,62 @@
   opacity: 1;
   background: rgba(0, 0, 0, 0.2);
 }
-
+.mySwiper .swiper-slide {
+  position: relative;
+  display: flex;
+      -webkit-box-pack: center;
+}
+.mySwiper .text_area {
+  position: relative;
+  width: 50%;
+  padding-top: 100px;
+}
+.mySwiper .text_area img{
+  width: 300px;
+}
+.mySwiper .img_area {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+}
+.mySwiper .img_area img {
+  width: 470px;
+}
+.mySwiper .text_area h2{
+  position: relative;
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #202020;
+  padding-bottom: 60px;
+}
+.mySwiper .text_area h2::before{
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  width: 30px;
+  height: 5px;
+  background-color: #000;
+}
+.mySwiper .text_area h3{
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.33px;
+  color: #202020;
+  padding: 0 0 20px 0;
+}
+.mySwiper .text_area .des{
+  font-family: 'Noto Sans KR';
+  font-size: 15px;
+  letter-spacing: -0.33px;
+  line-height: 1.9em;
+  color: #202020;
+  font-weight: 300;
+}
 .swiper-pagination-bullet-active {
   color: #fff;
   background: #007aff;
