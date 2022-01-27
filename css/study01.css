@@ -3,6 +3,13 @@
   width: 1400px;
   margin: 0 auto;
 }
+section .tit {
+  font-family: 'Poppins';
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: #202020;
+  }
 
 /* header */
 
@@ -243,4 +250,18 @@
 .mySwiper .swiper-pagination-bullet:hover::after {
   width: 80%;
   opacity: 1;
+}
+
+/* intro */
+.intro  {
+  padding-top: 200px;
+}
+.intro  h2 {
+  text-align: center;
+}
+.intro ul {
+  display: flex;
+}
+.intro ul li{
+  width: 300px;
 }
