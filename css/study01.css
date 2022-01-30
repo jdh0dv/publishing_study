@@ -11,8 +11,10 @@ section .tit {
   color: #202020;
   }
 
-/* header */
 
+
+
+/* header */
 .header {
   margin-top: 36px;
   display: flex;
@@ -53,6 +55,9 @@ section .tit {
   font-family: 'Noto Sans KR'
 }
 .right_menu .cart img, .right_menu .search img { width:20px; opacity: 0.5;}
+
+
+
 
 /* main */
 /* slider */
@@ -252,6 +257,8 @@ section .tit {
   opacity: 1;
 }
 
+
+
 /* intro */
 .intro  {
   padding-top: 200px;
@@ -261,7 +268,138 @@ section .tit {
 }
 .intro ul {
   display: flex;
+  justify-content: center;
 }
 .intro ul li{
+  position:relative;
   width: 300px;
+  height: 302px;
+  border: 1px solid #222;
+  margin-left:-1px;
+}
+.intro ul li:before{
+  content:'';
+  position:absolute;
+  width:300px;
+  height:300px;
+  border:1px solid #222;
+  border-radius:50%;
+  transition:all .3s;
+}
+.intro ul li:nth-child(1):hover:before{
+  background:url('../img/html01/taste-aricha-hover.png') no-repeat center;
+  background-size:100%;
+}
+.intro ul li:nth-child(2):hover:before{
+  background:url('../img/html01/taste-koke-hover.png') no-repeat center;
+  background-size:100%;
+}
+.intro ul li:nth-child(3):hover:before{
+  background:url('../img/html01/taste-konga-hover.png') no-repeat center;
+  background-size:100%;
+}
+.intro ul li img{
+  position: absolute;
+  left: -35%;
+  top: -35%;
+  max-width: 170%;
+}
+.intro ul h3{
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.intro ul p{
+  font-family: Noto Sans KR;
+  font-size: 17px;
+  letter-spacing: -0.33px;
+  text-align: center;
+  color: #202020;
+  padding: 20px 0 0 0;
+  position: absolute;
+  bottom:-15%;
+}
+
+
+
+/* collabo */
+.collabo {
+  padding-top:600px;
+  text-align:center;
+}
+.collabo h2{
+  font-family: Noto Sans KR;
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: -0.33px;
+  text-align: center;
+  color: #000;
+}
+.collabo p span{
+  font-family: Poppins;
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: -0.33px;
+  color: #000;
+  padding: 0 20px;
+}
+
+
+
+
+
+/* footer */
+.footer {
+  padding-top:20px;
+  border-top:3px solid #000;
+}
+.footer h3{
+  margin: 0 50px 30px 50px;
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: -0.33px;
+  text-align: left;
+  color: #000;
+}
+.footer .sitemap ul {
+  position: relative;
+  float: left;
+  margin: 30px 30px 30px 40px;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: Noto Sans KR;
+}
+.footer .footer_info {
+  position: relative;
+  float: right;
+  min-height: 1px;
+  margin: 20px 70px 30px 30px;
+  font-family: Noto Sans KR;
+  font-size: 15px;
+  line-height: 2.09;
+  letter-spacing: -0.33px;
+  text-align: left;
+  color: #000;
+}
+.footer .copyright {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 20px 0 30px 0;
+  margin-left:50px;
+  height: 36px;
+  font-family: Poppins;
+  font-size: 15px;
+  line-height: 2.38;
+  letter-spacing: -0.33px;
+  text-align: left;
 }
