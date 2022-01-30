@@ -265,6 +265,7 @@ section .tit {
 }
 .intro  h2 {
   text-align: center;
+  padding-bottom:60px;
 }
 .intro ul {
   display: flex;
