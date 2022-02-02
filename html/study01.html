@@ -96,12 +96,10 @@
                 },
               },
             });
-
-
           </script>
         </section>
         <section class="intro">
-          <h2 class="tit">Taste Palette<br>Which color do you like?</h2>
+          <h2 class="h2_tit">Taste Palette<br>Which color do you like?</h2>
           <ul>
             <li>
 				<img src="../img/html01/taste-aricha.png" alt="">
@@ -133,9 +131,9 @@
           </p>
         </section>
         <section class="art">
-          <h2>Collaboratoin</h2>
+          <h2 class="h2_tit">Collaboratoin</h2>
           <article class="people">
-            <h3 class="tit">Artist <span class="num">01</span></h3>
+            <h3 class="h3_tit">Artist <span class="num">01</span></h3>
             <div class="profile">
               <div class="img_area">
                 <img src="../img/html01/collaboratoin-artist-kimmulgil.png" alt="김물길 작가">
@@ -151,7 +149,7 @@
               </div>
             </div>
           </article>
-            <h3 class="tit">Gallery</h3>
+            <h3 class="h3_tit">Gallery</h3>
             <div class="swiper mySwiper2">
               <ul class="swiper-wrapper">
                 <li class="swiper-slide">
@@ -204,20 +202,15 @@
 
             <!-- Initialize Swiper -->
             <script>
-              var swiper = new Swiper(".mySwiper2", {
-                effect : 'fade',
-                pagination: {
-                  el: ".swiper-pagination",
-                  clickable: true,
-                  renderBullet: function (index, className) {
-                    return '<span class="' + className + '">' + (index + 1) + "</span>";
-                  },
-                },
-              });
+            const swiper = new Swiper('.mySwiper2', {
+              slidesPerView: 3,
+              speed: 400,
+              spaceBetween: 100,
+            });
             </script>
         </section>
         <section class="artist">
-          <h3 class="tit">Artist</h3>
+          <h2 class="h2_tit">Artist</h2>
           <p>people 1</p>
           <div class="swiper mySwiper3">
             <ul class="swiper-wrapper">

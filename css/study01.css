@@ -3,13 +3,21 @@
   width: 1400px;
   margin: 0 auto;
 }
-section .tit {
+section .h2_tit {
   font-family: 'Poppins';
   font-size: 50px;
   font-weight: 600;
   letter-spacing: 0.2px;
   color: #202020;
-  }
+}
+section .h3_tit {
+  font-family: 'Poppins';
+  font-size: 27px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  color: #202020;
+}
+
 
 
 
@@ -61,12 +69,12 @@ section .tit {
 
 /* main */
 /* slider */
-.swiper {
+.mySwiper {
   width: 100%;
   height: 100%;
 }
 
-.swiper-slide {
+.mySwiper .swiper-slide {
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,7 +90,7 @@ section .tit {
   align-items: center;
 }
 
-.swiper-pagination-bullet {
+.mySwiper .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
   text-align: center;
@@ -194,11 +202,11 @@ section .tit {
   left: auto !important;
   width: auto !important;
 }
-.swiper-pagination-bullet-active {
+.mySwiper .swiper-pagination-bullet-active {
   color: #fff;
   background: #007aff;
 }
-.swiper-top .swiper-pagination-bullet-active:after {
+.mySwiper .swiper-top .swiper-pagination-bullet-active:after {
   content: "";
   position: absolute;
   left: 15px;
@@ -210,7 +218,7 @@ section .tit {
   opacity: 1;
   background-color: #000;
 }
-.swiper-horizontal>.swiper-pagination-bullets::before {
+.mySwiper .swiper-horizontal>.swiper-pagination-bullets::before {
   content: '초신선을 경험해보세요';
   position: relative;
   font-family: Noto Sans KR;
@@ -336,6 +344,7 @@ section .tit {
   text-align:center;
 }
 .collabo h2{
+  margin-bottom: 200px;
   font-family: Noto Sans KR;
   font-size: 60px;
   font-weight: 600;
@@ -354,6 +363,65 @@ section .tit {
 
 
 
+/* Art */
+.art {
+  padding-top: 100px;
+}
+.art .h2_tit {
+  font-size: 55px;
+  border-bottom: 1px solid #222;
+  padding-bottom: 5px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.art .h3_tit .num{
+  padding-left: 100px;
+}
+.art .profile {
+  display: flex;
+}
+.art .profile .img_area {
+  position: relative;
+  width: 45%;
+  margin-top: 20px;
+}
+.art .profile .img_area img {
+  width: 100%;
+}
+.art .profile .text_area {
+  position: relative;
+  width: 45%;
+  margin-top: 20px;
+  margin-left: 10%;
+}
+.art .profile .text_area h4{
+  font-family: 'Noto Sans KR';
+  font-size: 40px;
+  font-weight: 600;
+  color: #202020;
+  padding-top: 90px;
+}
+.art .profile .text_area dt{
+  font-family: 'Poppins';
+  font-size: 25px;
+  font-weight: 600;
+  color: #202020;
+  padding: 120px 0 10px 0;
+}
+.art .profile .text_area dt:nth-child(3){
+  padding-top:0;
+}
+.art .profile .text_area dd{
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 500;
+  color: #202020;
+  padding: 0 0 40px 0;
+}
+.art .mySwiper2 .swiper-slide img {
+  width: auto;
+  height: 300px;
+}
 
 
 /* footer */
