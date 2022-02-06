@@ -197,7 +197,7 @@ section .h3_tit {
   color: #202020;
 }
 .mySwiper .swiper-pagination {
-  position: absolute;
+  height: 40px;
   right: 0;
   left: auto !important;
   width: auto !important;
@@ -210,7 +210,7 @@ section .h3_tit {
   content: "";
   position: absolute;
   left: 15px;
-  bottom: -20px;
+  bottom: -5px;
   width: 0px;
   height: 2px;
   margin: 7px 0 0;
@@ -218,7 +218,7 @@ section .h3_tit {
   opacity: 1;
   background-color: #000;
 }
-.mySwiper .swiper-horizontal>.swiper-pagination-bullets::before {
+.mySwiper .swiper-pagination-bullets::before {
   content: '초신선을 경험해보세요';
   position: relative;
   font-family: Noto Sans KR;
@@ -231,7 +231,7 @@ section .h3_tit {
 }
 .mySwiper .swiper-pagination-bullet {
   position: relative;
-  padding: 0 0 0 20px;
+  padding-left: 10px;
   font-family: 'Poppins';
   font-size: 20px;
   font-weight: 600;
@@ -249,19 +249,18 @@ section .h3_tit {
 .mySwiper .swiper-pagination-bullet:after {
   content: "";
   position: absolute;
-  left: 15px;
-  bottom: -20px;
+  left: 10px;
+  bottom: -5px;
   width: 0px;
   height: 2px;
   margin: 7px 0 0;
-  transition: all 0.2s ease-in-out;
-  transition-duration:  .3s;
+  transition: all 0.2s;
   opacity: 0;
   background: #000
 }
 .mySwiper .swiper-pagination-bullet-active::after,
 .mySwiper .swiper-pagination-bullet:hover::after {
-  width: 80%;
+  width: 20px;
   opacity: 1;
 }
 
@@ -365,6 +364,7 @@ section .h3_tit {
 
 /* Art */
 .art {
+  position: relative;
   padding-top: 100px;
 }
 .art .h2_tit {
@@ -379,6 +379,7 @@ section .h3_tit {
 }
 .art .profile {
   display: flex;
+  margin-bottom: 100px;
 }
 .art .profile .img_area {
   position: relative;
@@ -418,9 +419,61 @@ section .h3_tit {
   color: #202020;
   padding: 0 0 40px 0;
 }
+.art .mySwiper2 {
+  padding: 30px 0 200px;
+}
+.art .mySwiper2 .swiper-slide {
+  width: auto !important;
+}
 .art .mySwiper2 .swiper-slide img {
   width: auto;
   height: 300px;
+}
+.art .swiper-button {
+  position: absolute;
+  right: 0;
+  width: 80px;
+}
+.art .swiper-button-prev {
+  top: -30px;
+  left: 0;
+}
+.art .swiper-button-next {
+  top: -30px;
+  right: 0;
+}
+.art .swiper-button-next,
+.art .swiper-button-prev {
+  color: black;
+}
+.art .swiper-button-next:after,
+.art .swiper-button-prev:after {
+  font-size: 30px;
+}
+
+
+/* artist */
+.artist {
+  position: relative;
+}
+.artist .h2_tit {
+  font-size: 55px;
+  border-bottom: 1px solid #222;
+  padding-bottom: 5px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.artist .tit_num {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -0.33px;
+}
+.artist .tit_num span{
+  margin-left: 50px;
 }
 
 

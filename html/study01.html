@@ -81,22 +81,6 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
-          <!-- Swiper JS -->
-          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-          <!-- Initialize Swiper -->
-          <script>
-            var swiper = new Swiper(".mySwiper", {
-              effect : 'fade',
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                renderBullet: function (index, className) {
-                  return '<span class="' + className + '">' + (index + 1) + "</span>";
-                },
-              },
-            });
-          </script>
         </section>
         <section class="intro">
           <h2 class="h2_tit">Taste Palette<br>Which color do you like?</h2>
@@ -150,6 +134,10 @@
             </div>
           </article>
             <h3 class="h3_tit">Gallery</h3>
+            <div class="swiper-button">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
             <div class="swiper mySwiper2">
               <ul class="swiper-wrapper">
                 <li class="swiper-slide">
@@ -195,23 +183,11 @@
                   <img src="../img/html01/artist-01-14.jpg" alt="">
                 </li>
               </ul>
-              <div class="swiper-pagination"></div>
             </div>
-            <!-- Swiper JS -->
-            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-            <!-- Initialize Swiper -->
-            <script>
-            const swiper = new Swiper('.mySwiper2', {
-              slidesPerView: 3,
-              speed: 400,
-              spaceBetween: 100,
-            });
-            </script>
         </section>
         <section class="artist">
           <h2 class="h2_tit">Artist</h2>
-          <p>people 1</p>
+          <p class="tit_num">people <span>1</p>
           <div class="swiper mySwiper3">
             <ul class="swiper-wrapper">
               <li class="swiper-slide exist">
@@ -270,22 +246,6 @@
             </ul>
             <div class="swiper-pagination"></div>
           </div>
-          <!-- Swiper JS -->
-          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-          <!-- Initialize Swiper -->
-          <script>
-            var swiper = new Swiper(".mySwiper2", {
-              effect : 'fade',
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                renderBullet: function (index, className) {
-                  return '<span class="' + className + '">' + (index + 1) + "</span>";
-                },
-              },
-            });
-          </script>
         </section>
         <section class="partner">
           <h2>Partnership<br>Company</h2>
@@ -342,5 +302,30 @@
           </div>
       </footer>
     </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect : 'fade',
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+          },
+        },
+      });
+
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 5,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
