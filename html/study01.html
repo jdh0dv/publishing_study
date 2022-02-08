@@ -252,12 +252,12 @@
           </div>
         </section>
         <section class="partner">
-          <h2>Partnership<br>Company</h2>
-          <ul class="partner_li">
+          <h2 class="h2_tit">Partnership<br>Company</h2>
+          <ul>
             <li><a href="#"><img src="../img/html01/raonato.png" alt="raonato"></a></li>
             <li><a href="#"><img src="../img/html01/ppmall.png" alt="ppmall"></a></li>
           </ul>
-          <a href="#">기업 제휴 문의</a>
+          <a href="#" class="link">기업 제휴 문의</a>
         </section>
       </main>
       <footer class="footer">
@@ -311,6 +311,7 @@
 
     <!-- Initialize Swiper -->
     <script>
+      // visual
       var swiper = new Swiper(".mySwiper", {
         effect : 'fade',
         pagination: {
@@ -322,6 +323,7 @@
         },
       });
 
+      // gallery
       var swiper = new Swiper(".mySwiper2", {
         slidesPerView: 5,
         spaceBetween: 10,
@@ -331,9 +333,10 @@
         },
       });
 
+      // artist
       var swiper = new Swiper(".mySwiper3", {
         slidesPerView: 6,
-        spaceBetween: 32,
+        spaceBetween: 28,
       });
     </script>
   </body>
