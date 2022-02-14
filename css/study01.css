@@ -130,13 +130,8 @@ section .h3_tit {
 .mySwiper .slide03 .text_area::after {
   background: rgba(169, 35, 38, 0.6);
 }
-.mySwiper .swiper-slide-active .text_area img {
-  transform: rotate(-29.9999deg);
-}
 .mySwiper .text_area img{
   width: 300px;
-  transition: all 0.2s ease-in-out;
-  transition-duration: 0.5s;
 }
 .mySwiper .img_area {
   position: absolute;
@@ -166,9 +161,6 @@ section .h3_tit {
   background-color: #000;
   transition: all 0.2s ease-in-out;
   transition-duration: 0.5s;
-}
-.mySwiper .swiper-slide-active .text_area h2::before{
-  transform: rotate(-29.9999deg);
 }
 .mySwiper .text_area h3{
   font-family: 'Noto Sans KR';
