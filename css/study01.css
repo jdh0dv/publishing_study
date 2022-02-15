@@ -159,9 +159,19 @@ section .h3_tit {
   width: 30px;
   height: 5px;
   background-color: #000;
-  transition: all 0.2s ease-in-out;
-  transition-duration: 0.5s;
 }
+/*h2 title bar move*/
+@keyframes titlebar {
+  0% {transform: rotate(0deg);}
+  40% {transform: rotate(-60deg);}
+  80% {transform: rotate(-40deg);}
+  100% {transform: rotate(0deg);}
+}
+.mySwiper .swiper-slide-active .text_area h2::before {
+  animation: titlebar 2s;
+}
+
+
 .mySwiper .text_area h3{
   font-family: 'Noto Sans KR';
   font-size: 20px;
