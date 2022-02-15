@@ -131,7 +131,10 @@ section .h3_tit {
   background: rgba(169, 35, 38, 0.6);
 }
 .mySwiper .text_area img{
+  position: relative;
   width: 300px;
+  opacity: 0;
+  transition: all .6s .4s;
 }
 .mySwiper .img_area {
   position: absolute;
@@ -144,41 +147,47 @@ section .h3_tit {
 }
 .mySwiper .text_area h2{
   position: relative;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.2px;
   color: #202020;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
+  top: 30px;
+  opacity: 0;
+  transition: all .6s ease;
 }
 .mySwiper .text_area h2::before{
   content: '';
   position: absolute;
-  top: -10px;
+  top: 0;
   left: -20px;
   width: 30px;
   height: 5px;
   background-color: #000;
 }
-/*h2 title bar move*/
+/*h2 title*/
 @keyframes titlebar {
   0% {transform: rotate(0deg);}
-  40% {transform: rotate(-60deg);}
-  80% {transform: rotate(-40deg);}
-  100% {transform: rotate(0deg);}
+  40% {transform: rotate(-45deg);}
+  100% {transform: rotate(-30deg);}
 }
 .mySwiper .swiper-slide-active .text_area h2::before {
+  transform: rotate(-30deg);
   animation: titlebar 2s;
 }
 
-
 .mySwiper .text_area h3{
+  position: relative;
   font-family: 'Noto Sans KR';
   font-size: 20px;
   font-weight: 500;
   letter-spacing: -0.33px;
   color: #202020;
   padding: 0 0 20px 0;
+  top: 30px;
+  opacity: 0;
+  transition: all .6s ease;
 }
 .mySwiper .text_area h3::after{
   content: '';
@@ -192,12 +201,32 @@ section .h3_tit {
   background-size: 100%;
 }
 .mySwiper .text_area .des{
+  position: relative;
   font-family: 'Noto Sans KR';
   font-size: 15px;
   letter-spacing: -0.33px;
   line-height: 1.9em;
   color: #202020;
+  top: 30px;
+  opacity: 0;
+  transition: all .6s ease;
 }
+.mySwiper .swiper-slide-active .text_area h2,
+.mySwiper .swiper-slide-active .text_area h3,
+.mySwiper .swiper-slide-active .text_area p{
+  top: 0;
+  opacity: 1;
+}
+@keyframes titleimg {
+  0% {transform: rotate(60deg);}
+  80% {transform: rotate(10deg);}
+  100% {transform: rotate(0deg);}
+}
+.mySwiper .swiper-slide-active .text_area img {
+  opacity: 1;
+  animation: titleimg 3s;
+}
+
 .mySwiper .swiper-pagination {
   height: 40px;
   right: 0;
