@@ -134,13 +134,19 @@ section .h3_tit {
   position: relative;
   width: 300px;
   opacity: 0;
-  transition: all .6s .4s;
+  transition: all .6s ease-out .4s;
 }
 .mySwiper .img_area {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -30px;
   width: 50%;
+  opacity: 0;
+  transition: all .6s ease .4s;
+}
+.mySwiper .swiper-slide-active .img_area {
+  right: 0;
+  opacity: 1;
 }
 .mySwiper .img_area img {
   width: 470px;
@@ -166,7 +172,7 @@ section .h3_tit {
   height: 5px;
   background-color: #000;
 }
-/*h2 title*/
+/* keyframes */
 @keyframes titlebar {
   0% {transform: rotate(0deg);}
   40% {transform: rotate(-45deg);}
@@ -210,6 +216,7 @@ section .h3_tit {
   top: 30px;
   opacity: 0;
   transition: all .6s ease;
+  margin-bottom: 10px;
 }
 .mySwiper .swiper-slide-active .text_area h2,
 .mySwiper .swiper-slide-active .text_area h3,
@@ -217,14 +224,13 @@ section .h3_tit {
   top: 0;
   opacity: 1;
 }
-@keyframes titleimg {
-  0% {transform: rotate(60deg);}
-  80% {transform: rotate(10deg);}
+ @keyframes titleimg {
+  0% {transform: rotate(40deg);}
   100% {transform: rotate(0deg);}
 }
 .mySwiper .swiper-slide-active .text_area img {
   opacity: 1;
-  animation: titleimg 3s;
+  animation: titleimg 1.2s ease .4s;
 }
 
 .mySwiper .swiper-pagination {
